@@ -2,7 +2,8 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
-import auth from '../../../firebase.init';
+import auth from '../../firebase.init';
+
 
 const Header = () => {
     const [user] = useAuthState(auth);
@@ -19,7 +20,7 @@ const Header = () => {
         </> : <Link to="/login">Login</Link>}</li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-secondary px-20 text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -29,7 +30,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Ed-Tech</a>
+                <a className="btn btn-ghost normal-case text-2xl">Ed-Tech</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

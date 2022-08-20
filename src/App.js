@@ -1,16 +1,18 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Header from './pages/Shared/Header';
-import Footer from './pages/Shared/Footer';
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Footer from "./pages/Shared/Footer";
+import Header from "./pages/Shared/Header";
+
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div>
       <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-      </Routes>
+      <div className="max-w-7xl mx-auto">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
