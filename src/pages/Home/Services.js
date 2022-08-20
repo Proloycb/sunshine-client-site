@@ -5,7 +5,7 @@ import Service from './Service';
 
 
 const Services = () => {
-    const { data: courses, isLoading } = useQuery('services', () => fetch('http://localhost:5000/services')
+    const { data: courses, isLoading } = useQuery('services', () => fetch('https://pacific-shelf-94861.herokuapp.com/services')
         .then(res => res.json())
     )
 
