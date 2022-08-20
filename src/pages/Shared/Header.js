@@ -13,7 +13,6 @@ const Header = () => {
 
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/blogs">Blogs</Link></li>
         <li>{user ? <>
             <h5>{user?.displayName}</h5>
             <button onClick={logout} className="btn btn-ghost">Sign Out</button>
