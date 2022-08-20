@@ -10,9 +10,9 @@ import Header from "./pages/Shared/Header";
 
 function App() {
   return (
-    <div>
+    <div className="bg-base-200">
       <Header />
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/purchase/:id' element={
